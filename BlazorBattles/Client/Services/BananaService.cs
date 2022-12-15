@@ -10,6 +10,11 @@
             Bananas -= amount;
             BananasChanged();
         }
+        public void AddBananas(int amount)
+        {
+            Bananas += amount;
+            BananasChanged();
+        }
 
         void BananasChanged() => OnChange.Invoke();
     }
