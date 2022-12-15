@@ -18,6 +18,7 @@ namespace BlazorBattles.Client.Services
         {
             var unit = Units.First(unit=> unit.Id == unitId);
             MyUnits.Add(new UserUnit { UnitId = unit.Id, HitPoints= unit.HitPoints });
+
         }
     }
 }
